@@ -8,6 +8,8 @@ public class ch1collide : MonoBehaviour
 
     public float distance = 1.5f; 
 
+   // public Movement playermove;
+
     Vector2 movement;
 
     void Update () {
@@ -16,7 +18,12 @@ public class ch1collide : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D other)
     {
-        
-        rb.MovePosition(rb.position - movement);
+        if(other.tag == "Car"){
+            //playermove.SetActive(false);
+            this.gameObject.SetActive(false);
+            rb.MovePosition(rb.position - movement * Time.fixedDeltaTime);
+        }   
+        this.gameObject.SetActive(true);
+        //playermove.SetActive(true);
     }
 }

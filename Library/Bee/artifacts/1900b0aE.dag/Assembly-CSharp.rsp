@@ -345,9 +345,9 @@
 "Assets/Car movement.cs"
 "Assets/carmove.cs"
 "Assets/carreset.cs"
-"Assets/ch1collide.cs"
 "Assets/ChickenCollide.cs"
 "Assets/CHMovement.cs"
+"Assets/Collision.cs"
 "Assets/resetzone.cs"
 -langversion:8.0
 

@@ -8,7 +8,9 @@ public class Collision : MonoBehaviour
 
     public float distance;
 
-    public GameObject player;
+   // public GameObject player;
+
+    public playerreset player;
 
     Vector2 movement;
     void Start()
@@ -27,10 +29,11 @@ public class Collision : MonoBehaviour
         if(other.gameObject.tag == "Car"){
 
             Debug.Log("Hit");
+            player.ResetPlayer();
             //this.gameObject.SetActive(false);
-            player.GetComponent<CHMovement>().enabled = false;
-            rb.MovePosition(rb.position - movement * Time.fixedDeltaTime);
-            player.GetComponent<CHMovement>().enabled = true;
+           // player.GetComponent<CHMovement>().enabled = false;
+          //  rb.MovePosition(rb.position - movement * Time.fixedDeltaTime);
+           // player.GetComponent<CHMovement>().enabled = true;
         }
        // player.GetComponent<CHMovement>().enabled = true;
         //this.gameObject.SetActive(true);

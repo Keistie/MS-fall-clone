@@ -342,13 +342,19 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
+"Assets/backtostart.cs"
 "Assets/Car movement.cs"
 "Assets/carmove.cs"
+"Assets/carmoveup.cs"
 "Assets/carreset.cs"
 "Assets/ChickenCollide.cs"
 "Assets/CHMovement.cs"
+"Assets/CHMovement2.cs"
 "Assets/Collision.cs"
+"Assets/playerreset.cs"
 "Assets/resetzone.cs"
+"Assets/resetzoneleft.cs"
+"Assets/score.cs"
 -langversion:8.0
 
 /deterministic
